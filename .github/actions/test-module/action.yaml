@@ -1,0 +1,8 @@
+name: Test Module
+description: This action tests the module with Pester
+runs:
+  using: composite
+  steps:
+    - name: Test Module
+      shell: pwsh
+      run: Invoke-Pester -Output Detailed
